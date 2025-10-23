@@ -9,8 +9,6 @@ Aplicação desenvolvida em **Next.js + React + Tailwind + Shadcn UI**, simuland
 - **TailwindCSS + Shadcn UI**
 - **LocalStorage** (mock de persistência)
 
-## Vercel
-
 ## 🧰 Instalação e uso
 
 ```bash
