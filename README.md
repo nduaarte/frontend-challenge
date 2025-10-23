@@ -2,8 +2,6 @@
 
 Aplicação desenvolvida em **Next.js + React + Tailwind + Shadcn UI**, simulando um fluxo completo de **checkout 100% mockado**, com foco em UX, clareza de estados e fidelidade a um e-commerce real.
 
----
-
 ## 🚀 Stack
 
 - **Next.js 14 (com pages router)**
@@ -11,7 +9,7 @@ Aplicação desenvolvida em **Next.js + React + Tailwind + Shadcn UI**, simuland
 - **TailwindCSS + Shadcn UI**
 - **LocalStorage** (mock de persistência)
 
----
+## Vercel
 
 ## 🧰 Instalação e uso
 

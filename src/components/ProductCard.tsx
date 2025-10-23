@@ -3,7 +3,12 @@ import { Product } from "../types";
 import { fmt } from "../utils/currency";
 import { useCart } from "../contexts/CartContext";
 
-export const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
+interface ProductCardProps {
+  product: Product;
+  onAdd?: (product: Product) => void;
+}
+
+export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { items, add, remove } = useCart();
   const isInCart = items.some((i) => i.product.id === product.id);
 
