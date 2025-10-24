@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { useAuth } from "@/contexts/AuthContext";
 import { Header } from "../components/Header";
 import { fmt } from "../utils/currency";
 import Link from "next/link";
@@ -13,6 +15,9 @@ interface Order {
 }
 
 export default function OrdersPage() {
+  const { user } = useAuth();
+  const router = useRouter();
+
   const [orders, setOrders] = useState<Order[]>([]);
   const [mounted, setMounted] = useState(false);
 
@@ -21,6 +26,10 @@ export default function OrdersPage() {
     const saved = JSON.parse(localStorage.getItem("orders") || "[]");
     setOrders(saved.reverse());
   }, []);
+
+  useEffect(() => {
+    if (!user) router.push("/auth");
+  }, [user]);
 
   if (!mounted) return null;
 
