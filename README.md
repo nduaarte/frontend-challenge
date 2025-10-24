@@ -9,6 +9,10 @@ Aplicação desenvolvida em **Next.js + React + Tailwind + Shadcn UI**, simuland
 - **TailwindCSS + Shadcn UI**
 - **LocalStorage** (mock de persistência)
 
+## 🚀 Deploy
+
+https://frontend-challenge-colmeia.vercel.app/
+
 ## 🧰 Instalação e uso
 
 ```bash
