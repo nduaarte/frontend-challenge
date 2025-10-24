@@ -91,9 +91,7 @@ export default function CheckoutPage() {
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* 🧾 Coluna esquerda */}
           <div className="lg:col-span-2 bg-white border border-slate-200 rounded-2xl shadow-sm p-6 space-y-8">
-            {/* Dados do comprador */}
             <section>
               <h2 className="text-lg font-semibold text-slate-800 mb-3">
                 1. Dados do comprador
@@ -126,7 +124,6 @@ export default function CheckoutPage() {
               </div>
             </section>
 
-            {/* Método de pagamento */}
             <section>
               <h2 className="text-lg font-semibold text-slate-800 mb-3">
                 2. Método de pagamento
@@ -149,7 +146,6 @@ export default function CheckoutPage() {
                 ))}
               </div>
 
-              {/* Campos específicos */}
               <div className="mt-5 bg-slate-50 rounded-xl p-4 border border-slate-200">
                 {method === "pix" && (
                   <p className="text-slate-700">
@@ -188,7 +184,6 @@ export default function CheckoutPage() {
               </div>
             </section>
 
-            {/* Revisão */}
             <section>
               <h2 className="text-lg font-semibold text-slate-800 mb-3">
                 3. Revisão do pedido
@@ -230,7 +225,6 @@ export default function CheckoutPage() {
             </div>
           </div>
 
-          {/* 📊 Coluna direita: status */}
           <aside className="bg-white border border-slate-200 rounded-2xl shadow-sm p-6 h-fit sticky top-6 space-y-4">
             <h3 className="text-lg font-semibold text-slate-800">
               Acompanhamento

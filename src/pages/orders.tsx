@@ -19,7 +19,7 @@ export default function OrdersPage() {
   useEffect(() => {
     setMounted(true);
     const saved = JSON.parse(localStorage.getItem("orders") || "[]");
-    setOrders(saved.reverse()); // mostra os mais recentes primeiro
+    setOrders(saved.reverse());
   }, []);
 
   if (!mounted) return null;
