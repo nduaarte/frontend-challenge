@@ -81,7 +81,7 @@ export default function CartPage() {
                   Total: <strong>{fmt(total)}</strong>
                 </div>
                 <Link
-                  href="/orders"
+                  href="/checkout"
                   className="inline-block mt-3 px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
                 >
                   Finalizar Compra
